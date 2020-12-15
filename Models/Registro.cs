@@ -22,7 +22,7 @@ namespace PC03.Models
         public string Lugar { get; set; }
 
         public string Nombre { get; set; }
-
+        public string Fecha { get; set; }
 
     }
 }

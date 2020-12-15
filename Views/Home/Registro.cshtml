@@ -6,23 +6,23 @@
 
 
 <form action="" method="post">
-    <div class="form-group" >
+    <div class="form-group">
         <label asp-for="Producto"></label>
-        <input type="text" asp-for="Producto" class="form-control">
+        <input type="text" asp-for="Producto" required class="form-control">
     </div>
 
-     <div class="form-group">
+    <div class="form-group">
         <label asp-for="Url"></label>
         <input type="url" asp-for="Url" required class="form-control">
     </div>
 
-     <div class="form-group">
+    <div class="form-group">
         <label asp-for="Descripcion"></label>
         <textarea asp-for="Descripcion" required class="form-control"></textarea>
 
     </div>
 
-        <div class="form-group">
+    <div class="form-group">
         <label asp-for="Precio"></label>
         <input type="text" asp-for="Precio" required class="form-control">
 
@@ -30,11 +30,11 @@
 
     <div class="form-group">
         <label asp-for="Celular"></label>
-        <input type="tel" asp-for="Celular"  required class="form-control">
+        <input type="tel" asp-for="Celular" required class="form-control">
 
     </div>
 
-     <div class="form-group">
+    <div class="form-group">
         <label asp-for="Lugar"></label>
         <input type="text" asp-for="Lugar" required class="form-control">
 
@@ -46,5 +46,12 @@
 
     </div>
 
-    <button class="btn btn-dark">Enviar</button>
+    <div>
+        <label asp-for="Fecha"></label>
+        <input type="date" asp-for="Fecha" name="trip-start" value="2020-01-01" required class="form-control" min="2020-01-01" max="2020-12-31">
+    </div>
+
+    <div>
+  <button class="btn btn-dark">Enviar</button>
+    </div>
 </form>

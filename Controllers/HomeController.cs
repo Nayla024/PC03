@@ -22,7 +22,7 @@ namespace PC03.Controllers
         public IActionResult Index()
         {
 
-            var registros = _context.Registros.Where(x => x.Producto != null).ToList();
+            var registros = _context.Registros.OrderBy(x => x.Fecha).Take(7).ToList();
             return View(registros);
         }
 
