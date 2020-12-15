@@ -18,7 +18,6 @@ namespace PC03.Controllers
         {
              _context = context;
         }
-
         public IActionResult Index()
         {
 
