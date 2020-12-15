@@ -1,44 +1,49 @@
 @model Registro
 
-<h1>Formulario de contacto</h1>
+<h1>solicitud de compra</h1>
 
 <div asp-validation-summary="All"></div>
 
 
 <form action="" method="post">
-    <div class="form-group">
+    <div class="form-group" >
         <label asp-for="Producto"></label>
         <input type="text" asp-for="Producto" class="form-control">
     </div>
 
      <div class="form-group">
         <label asp-for="Url"></label>
-        <input type="url" asp-for="Url" class="form-control">
+        <input type="url" asp-for="Url" required class="form-control">
     </div>
 
      <div class="form-group">
         <label asp-for="Descripcion"></label>
-        <textarea asp-for="Descripcion" class="form-control"></textarea>
+        <textarea asp-for="Descripcion" required class="form-control"></textarea>
+
     </div>
 
         <div class="form-group">
         <label asp-for="Precio"></label>
-        <input type="text" asp-for="Precio" class="form-control">
+        <input type="text" asp-for="Precio" required class="form-control">
+
     </div>
 
     <div class="form-group">
         <label asp-for="Celular"></label>
-        <input type="tel" asp-for="Celular" class="form-control">
+        <input type="tel" asp-for="Celular"  required class="form-control">
+
     </div>
 
      <div class="form-group">
         <label asp-for="Lugar"></label>
-        <input type="text" asp-for="Lugar" class="form-control">
+        <input type="text" asp-for="Lugar" required class="form-control">
+
     </div>
 
     <div class="form-group">
         <label asp-for="Nombre"></label>
-        <input type="text" asp-for="Nombre" class="form-control">
+        <input type="text" asp-for="Nombre" required class="form-control">
+
     </div>
 
     <button class="btn btn-dark">Enviar</button>

@@ -26,7 +26,7 @@ namespace PC03
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<RegistroContext>(dco => dco.UseInMemoryDatabase("WebAppBD"));
+            services.AddDbContext<RegistroContext>(dco => dco.UseInMemoryDatabase("RegistroBD"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

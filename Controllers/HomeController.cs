@@ -21,7 +21,8 @@ namespace PC03.Controllers
 
         public IActionResult Index()
         {
-            var registros = _context.Registros.Where(x => x != null).ToList();
+
+            var registros = _context.Registros.Where(x => x.Producto != null).ToList();
             return View(registros);
         }
 
