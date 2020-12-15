@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using PC03.Models;
+
 namespace PC03.Data
 {
-    public class RegistroContext
-    {
-         public class RegistroContext : DbContext
+    public class RegistroContext : DbContext
     {
         public DbSet<Registro> Registros { get; set; }
 
@@ -11,5 +11,5 @@ namespace PC03.Data
 
         }
     }
-    }
+    
 }
